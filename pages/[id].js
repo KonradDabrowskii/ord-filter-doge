@@ -53,7 +53,7 @@ export default function Incription({ inscription, config }) {
       <main className={styles.mainContainer}>
         <div className={styles.contentContainer}>
           <div className={styles.imageContainer}>
-            <Image src={`https://ordinals.com/content/${inscription.id}`}
+            <Image src={`https://doginals.com/content/${inscription.id}`}
                    fill
                    style={{ objectFit: "contain" }}
                    alt={`Image of #${inscription.inscription_number}`}/>
@@ -71,7 +71,7 @@ export default function Incription({ inscription, config }) {
 function HeaderInfo({ inscription }) {
   return (
     <div className={styles.headerContainer}>
-      <h1>{`Inscription #${inscription.inscription_number}`}</h1>
+      <h1>{`Shibescriptions #${inscription.inscription_number}`}</h1>
       <div className={styles.idContainer}>
         <p>{`ID: ${inscription.id}`}</p>
         <IconButton icon="copy" 
@@ -79,7 +79,7 @@ function HeaderInfo({ inscription }) {
                     style={{ minWidth: "1.7rem" }}
                     ariaLabel="Copy inscription ID"/>
       </div>
-      <Button text="View on Ordinals.com" href={`https://ordinals.com/inscription/${inscription.id}`} openTab style={{
+      <Button text="View on Doginals.com" href={`https://doginals.com/shibescription/${inscription.id}`} openTab style={{
         margin: "0.5rem 1rem 1rem auto",
         fontWeight: "normal",
         fontSize: "1rem"

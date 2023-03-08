@@ -1,12 +1,12 @@
 # OrdFilter
 
-This is a simple website that displays a collection of ordinals, along with a filter. Below is an example used with the Ordinal Fomojis collection, which is available on https://ord-filter.vercel.app, and is also used on the [Ordinal Fomojis website](https://www.fomojis.io)
+This is a simple website that displays a collection of doginals, along with a filter. Below is an example used with the Ordinal Fomojis collection, which is available on https://ord-filter.vercel.app, and is also used on the [Ordinal Fomojis website](https://www.fomojis.io)
 
-On the collection page, all Ordinals are visible, and are labelled with their inscription number. The Ordinals can be filtered by trait, and as many filters as you want can be applied. Each filter can be removed one by one either by unticking it in the filter pane, or clicking the cross on the filter cards at the top. All filters can be cleared using the "Clear all" button
+On the collection page, all doginals are visible, and are labelled with their inscription number. The doginals can be filtered by trait, and as many filters as you want can be applied. Each filter can be removed one by one either by unticking it in the filter pane, or clicking the cross on the filter cards at the top. All filters can be cleared using the "Clear all" button
 
 <img width="1552" alt="collection_preview" src="https://user-images.githubusercontent.com/125774731/221779768-8f1e52c7-e10d-4f1d-a47f-266ac4d57590.png">
 
-Clicking on an individual Ordinal on the collection page brings up more detailed information about it, including its inscription id, all it's attributes, and a button to take you to its ordinals.com page. Also, any of the attributes can be clicked, which will take you to the collection page showing just the Ordinals with that trait
+Clicking on an individual Ordinal on the collection page brings up more detailed information about it, including its inscription id, all it's attributes, and a button to take you to its doginals.com page. Also, any of the attributes can be clicked, which will take you to the collection page showing just the doginals with that trait
 
 <img width="1552" alt="individual_preview" src="https://user-images.githubusercontent.com/125774731/221779715-f1cddae4-9693-4a05-ba35-2291bf53cb94.png">
 
@@ -23,13 +23,13 @@ To get started, Fork this repo into your own Github account (I recommend forking
 
 Once you have forked and cloned the repo onto your computer, `cd` into `ord-filter` and execute `npm run dev`. You can then view the website on `localhost:3000`. It will update live, so when you change the code and save it, the website will automatically update to reflect the change. 
 
-Note: performance in development is significantly worse than it will be when it is built properly, becuase it tries to download the inscription numbers from ordinals.com every time a change is made, whereas this normally only happens once when the website is built.
+Note: performance in development is significantly worse than it will be when it is built properly, becuase it tries to download the inscription numbers from doginals.com every time a change is made, whereas this normally only happens once when the website is built.
 
 ## Setup
 The below instructions outline the minimal changes that need to be made if you want to set up this website for your collection. You can also take any parts from the source code and put them into your own website
 
 ### inscriptions.json
-The `lib/inscriptions.json` file contains all the metadata about your Ordinals, such as the inscription ids and the traits. You will need to replace the existing file with your metadata. It has the following structure
+The `lib/inscriptions.json` file contains all the metadata about your doginals, such as the inscription ids and the traits. You will need to replace the existing file with your metadata. It has the following structure
 ```
 [
   {
