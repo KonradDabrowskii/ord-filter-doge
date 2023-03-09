@@ -36099,7 +36099,7 @@
                 "percent": "0.10%"
               },
               {
-                "trait_type": "1/2",
+                "trait_type": "Special editions",
                 "value": "astronaut",
                 "percent": "0.20%"
               }
@@ -36117,7 +36117,7 @@
               },
               {
                 "trait_type": "1/2",
-                "value": "astronaut",
+                "value": "Special editions",
                 "percent": "0.20%"
 
               }
@@ -36135,7 +36135,7 @@
           "percent": "0.10%"
         },
         {
-          "trait_type": "1/3",
+          "trait_type": "Special editions",
           "value": "hazmat",
           "percent": "0.30%"
         }
@@ -36152,7 +36152,7 @@
                 "percent": "0.10%"
               },
               {
-                "trait_type": "1/3",
+                "trait_type": "Special editions",
                 "value": "hazmat",
                 "percent": "0.30%"
               }
@@ -36169,7 +36169,7 @@
                 "percent": "0.10%"
               },
               {
-                "trait_type": "1/3",
+                "trait_type": "Special editions",
                 "value": "hazmat",
                 "percent": "0.30%"
               }
@@ -36187,7 +36187,7 @@
                 "percent": "0.10%"
               },
               {
-                "trait_type": "1/1",
+                "trait_type": "Special editions",
                 "value": "zombie",
                 "percent": "0.10%"
               }
@@ -36199,12 +36199,12 @@
           "meta": {
             "attributes": [
               {
-                "trait_type": "Background",
+                "trait_type": "Special editions",
                 "value": "Dogecoin",
                 "percent": "0.10%"
               },
               {
-                "trait_type": "1/1",
+                "trait_type": "Special editions",
                 "value": "Skeleton",
                 "percent": "0.10%"
               }
