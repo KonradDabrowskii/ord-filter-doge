@@ -429,7 +429,7 @@
         },
         {
           "trait_type": "Clothing",
-          "value": "Shirt",
+          "value": "None",
           "percent": "0.21%"
         },
         {
@@ -15881,7 +15881,7 @@
         },
         {
           "trait_type": "Mouth",
-          "value": "Bone",
+          "value": "Diamond Teeth",
           "percent": "0.26%"
         }
       ]
@@ -16569,12 +16569,12 @@
         },
         {
           "trait_type": "Clothing",
-          "value": "Shirt",
+          "value": "None",
           "percent": "0.63%"
         },
         {
           "trait_type": "Head",
-          "value": "Bandana",
+          "value": "None",
           "percent": "0.74%"
         },
         {
@@ -16584,7 +16584,7 @@
         },
         {
           "trait_type": "Mouth",
-          "value": "Muzzle",
+          "value": "Dog Teeth",
           "percent": "2.38%"
         }
       ]
@@ -24307,7 +24307,7 @@
         },
         {
           "trait_type": "Head",
-          "value": "Halo",
+          "value": "Devil Horns",
           "percent": "1.01%"
         },
         {
@@ -24317,7 +24317,7 @@
         },
         {
           "trait_type": "Mouth",
-          "value": "None",
+          "value": "Dog Teeth",
           "percent": "0.26%"
         }
       ]
@@ -33075,7 +33075,7 @@
         },
         {
           "trait_type": "Head",
-          "value": "Propellor Hat",
+          "value": "None",
           "percent": "0.74%"
         },
         {
@@ -34491,7 +34491,7 @@
         },
         {
           "trait_type": "Mouth",
-          "value": "Bone",
+          "value": "None",
           "percent": "0.65%"
         }
       ]
@@ -35734,7 +35734,7 @@
         },
         {
           "trait_type": "Clothing",
-          "value": "Tshirt",
+          "value": "Vest",
           "percent": "0.21%"
         },
         {
