@@ -112,44 +112,6 @@
     }
   },
 
-
-  {
-    "id": "01213fb8997d336f8c4419bb3959950bc0f67e64c16ed5853b7f4f169bd57da4i0",
-    "meta": {
-      "attributes": [
-        {
-          "trait_type": "Background",
-          "value": "Dogecoin",
-          "percent": "0.10%"
-        },
-        {
-          "trait_type": "Body",
-          "value": "Tiger",
-          "percent": "0.87%"
-        },
-        {
-          "trait_type": "Clothing",
-          "value": "Vest",
-          "percent": "1.59%"
-        },
-        {
-          "trait_type": "Head",
-          "value": "Propellor Hat",
-          "percent": "1.01%"
-        },
-        {
-          "trait_type": "Eye",
-          "value": "None",
-          "percent": "0.21%"
-        },
-        {
-          "trait_type": "Mouth",
-          "value": "Dog Teeth",
-          "percent": "0.81%"
-        }
-      ]
-    }
-  },
   {
     "id": "56dafd083935989539d51aebbe7406337f3048375b086c99eef3b665606931e7i0",
     "meta": {
@@ -1198,43 +1160,7 @@
       ]
     }
   },
-  {
-    "id": "5c8dee22e9d2fcd327e50880438e60decefd4bb84c8694050212d7c2a15e42b9i0",
-    "meta": {
-      "attributes": [
-        {
-          "trait_type": "Background",
-          "value": "Dogecoin",
-          "percent": "0.10%"
-        },
-        {
-          "trait_type": "Body",
-          "value": "Brown",
-          "percent": "0.65%"
-        },
-        {
-          "trait_type": "Clothing",
-          "value": "Collar",
-          "percent": "0.92%"
-        },
-        {
-          "trait_type": "Head",
-          "value": "None",
-          "percent": "0.33%"
-        },
-        {
-          "trait_type": "Eye",
-          "value": "None",
-          "percent": "0.21%"
-        },
-        {
-          "trait_type": "Mouth",
-          "value": "None",
-          "percent": "0.26%"
-        }
-      ]
-    }
-  },
+
   {
     "id": "1ad2f173bf2ea1b70b70a619a5f4906b26b379e3ea6e42b8d90e45aad9e7b915i0",
     "meta": {
