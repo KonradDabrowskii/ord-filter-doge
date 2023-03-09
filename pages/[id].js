@@ -71,7 +71,7 @@ export default function Incription({ inscription, config }) {
 function HeaderInfo({ inscription }) {
   return (
     <div className={styles.headerContainer}>
-      <h1>{`Shibescriptions #${inscription.inscription_number}`}</h1>
+        <h1 style={{ fontSize: "2.5rem" }}>{`Shibescriptions #${inscription.inscription_number}`}</h1>
       <div className={styles.idContainer}>
         <p>{`ID: ${inscription.id}`}</p>
         <IconButton icon="copy" 
@@ -91,7 +91,7 @@ function HeaderInfo({ inscription }) {
 function TraitsInfo({ inscription }) {
   return (
     <div className={styles.attributesContainer}>
-      <h1>Attributes</h1>
+        <h1 style={{ fontSize: "1.5rem" }}>Attributes</h1>
       <div className={styles.attributesGrid}>
         {inscription.meta.attributes.map((attribute) =>
           <TraitCard attribute={attribute} key={`${attribute.trait_type}_${attribute.value}`}/>

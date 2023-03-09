@@ -209,7 +209,7 @@ export default function Collection({ inscriptions, properties, counts, config })
                            style={{ objectFit: "contain" }}
                            alt={`Image of #${inscription.inscription_number}`}/>
                   </div>
-                  <h1>{`#${inscription.inscription_number}`}</h1>
+                  <h1 style={{ fontSize: "1.7rem" }}>{`#${inscription.inscription_number}`}</h1>
                 </div>
               </Link>
               )
