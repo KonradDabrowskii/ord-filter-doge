@@ -199,6 +199,9 @@ export default function Collection({ inscriptions, properties, counts, config })
               }
             </div>
           </div>
+          <div className="homebutton-container">
+            <a href="/">Home</a>
+          </div>
           <div className={styles.collectionContainer}>
             {filteredInscriptions.map((inscription) => 
               <Link href={`/${inscription.id}`} key={inscription.meta.name}>
