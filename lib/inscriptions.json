@@ -7911,12 +7911,12 @@
         },
         {
           "trait_type": "Clothing",
-          "value": "None",
+          "value": "Collar",
           "percent": "0.21%"
         },
         {
           "trait_type": "Head",
-          "value": "Viking",
+          "value": "Army Helmet",
           "percent": "1.15%"
         },
         {
@@ -7926,7 +7926,7 @@
         },
         {
           "trait_type": "Mouth",
-          "value": "None",
+          "value": "Golden Bone",
           "percent": "0.26%"
         }
       ]
@@ -9184,7 +9184,7 @@
         },
         {
           "trait_type": "Mouth",
-          "value": "None",
+          "value": "Dog Teeth",
           "percent": "0.26%"
         }
       ]
@@ -14164,12 +14164,12 @@
         },
         {
           "trait_type": "Clothing",
-          "value": "None",
+          "value": "Tie",
           "percent": "0.21%"
         },
         {
           "trait_type": "Head",
-          "value": "None",
+          "value": "Army Helmet",
           "percent": "0.33%"
         },
         {
@@ -14179,7 +14179,7 @@
         },
         {
           "trait_type": "Mouth",
-          "value": "Diamond Teeth",
+          "value": "None",
           "percent": "1.14%"
         }
       ]
@@ -14845,7 +14845,7 @@
         },
         {
           "trait_type": "Mouth",
-          "value": "None",
+          "value": "Bone",
           "percent": "0.26%"
         }
       ]
@@ -17536,17 +17536,17 @@
         },
         {
           "trait_type": "Head",
-          "value": "None",
+          "value": "Devil Horns",
           "percent": "0.33%"
         },
         {
           "trait_type": "Eye",
-          "value": "Shades",
+          "value": "Eyepatch",
           "percent": "0.69%"
         },
         {
           "trait_type": "Mouth",
-          "value": "Muzzle",
+          "value": "Dog Teeth",
           "percent": "2.38%"
         }
       ]
