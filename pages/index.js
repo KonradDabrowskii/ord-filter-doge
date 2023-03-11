@@ -198,8 +198,12 @@ export default function Collection({ inscriptions, properties, counts, config })
                     <p className={styles.clearAll} onClick={() => setQueryFilters(router, [])}>Clear All</p>
                 )}
               </div>
-              <Button text="Filter" icon="filter" onClick={toggleSideBar} style={{letterSpacing: "0.07rem"}}/>
-              <a href="https://www.dogefrenz.com/" className={`${styles.button} ${styles.homeButton}`} target="_blank" rel="noopener noreferrer">HOME</a>
+              <a href="https://www.dogefrenz.com/" className={`${styles.button} ${styles.filterContainer} ${styles.homeButton}`} target="_blank" rel="noopener noreferrer">
+            <span className={`${styles.buttonIcon} ${styles.homeButtonIcon}`}>
+              <i className="fas fa-home"></i>
+            </span>
+                <p className={`${styles.buttonText} ${styles.homeButtonText}`}>Home</p>
+              </a>
             </div>
             <div className={styles.collectionContainer}>
               {filteredInscriptions.map((inscription) => (
