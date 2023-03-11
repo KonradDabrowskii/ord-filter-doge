@@ -138,8 +138,8 @@ export default function Collection({ inscriptions, properties, counts, config })
   // Set up filters when query is changed
   useEffect(() => {
     resetProperties(properties)
-    let { queryValid, filterList } = queryToFilters(router.query, properties)
-    
+    let {queryValid, filterList} = queryToFilters(router.query, properties)
+
     if (!queryValid) {
       setQueryFilters(router, filterList)
     } else {
@@ -177,50 +177,51 @@ export default function Collection({ inscriptions, properties, counts, config })
   }
 
   return (
-    <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>{config.title}</title>
-        <meta name="description"
-              content={config.description}
-              key="desc"/>
-      </Head>
-      <main className={styles.main}>
-        <SideBar isOpen={sideBarOpen} filters={filters} counts={counts} setState={setState} toggleSideBar={toggleSideBar}/>
-        <div className={styles.mainContainer}>
-          <div className={styles.topContainer}>
-            <Button text="Filter" icon="filter" onClick={toggleSideBar} style={{ letterSpacing: "0.07rem" }}/>
-            <div className={styles.filterContainer}>
-              {filterList.map((filter) => 
-                <FilterCard property={filter.property} trait={filter.trait} setState={setState} key={`card_${filter.property}_${filter.trait}`}/>
+      <>
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+          <title>{config.title}</title>
+          <meta name="description" content={config.description} key="desc"/>
+        </Head>
+        <main className={styles.main}>
+          <SideBar isOpen={sideBarOpen} filters={filters} counts={counts} setState={setState}
+                   toggleSideBar={toggleSideBar}/>
+          <div className={styles.mainContainer}>
+            <div className={styles.topContainer}>
+              <Button text="Filter" icon="filter" onClick={toggleSideBar} style={{letterSpacing: "0.07rem"}}/>
+              <div className={styles.filterContainer}>
+                {filterList.map((filter) => (
+                    <FilterCard property={filter.property} trait={filter.trait} setState={setState}
+                                key={`card_${filter.property}_${filter.trait}`}/>
+                ))}
+                {filterList.length > 0 && (
+                    <p className={styles.clearAll} onClick={() => setQueryFilters(router, [])}>Clear All</p>
+                )}
+              </div>
+              <a href="https://www.bitcoingoblins.com/" target="_blank" rel="noopener noreferrer"
+                 className={styles.homeButton}>HOME</a>
+            </div>
+            <div className={styles.collectionContainer}>
+              {filteredInscriptions.map((inscription) => (
+                  <Link href={`/${inscription.id}`} key={inscription.meta.name}>
+                    <div className={styles.imageCard}>
+                      <div className={styles.imageContainer}>
+                        <Image src={`https://doginals.com/content/${inscription.id}`}
+                               fill
+                               style={{objectFit: "contain"}}
+                               alt={`Image of #${inscription.inscription_number}`}/>
+                      </div>
+                      <h1 style={{fontSize: "1.7rem"}}>{`#${inscription.inscription_number}`}</h1>
+                    </div>
+                  </Link>
+              ))}
+              {filteredInscriptions.length == 0 && (
+                  <h1>No items found for this search</h1>
               )}
-              {filterList.length > 0 &&
-                <p className={styles.clearAll} onClick={() => setQueryFilters(router, [])}>Clear All</p>
-              }
             </div>
           </div>
-          <div className={styles.collectionContainer}>
-            {filteredInscriptions.map((inscription) => 
-              <Link href={`/${inscription.id}`} key={inscription.meta.name}>
-                <div className={styles.imageCard}>
-                  <div className={styles.imageContainer}>
-                    <Image src={`https://doginals.com/content/${inscription.id}`}
-                           fill
-                           style={{ objectFit: "contain" }}
-                           alt={`Image of #${inscription.inscription_number}`}/>
-                  </div>
-                  <h1 style={{ fontSize: "1.7rem" }}>{`#${inscription.inscription_number}`}</h1>
-                </div>
-              </Link>
-              )
-            }
-            {filteredInscriptions.length == 0 &&
-              <h1>No items found for this search</h1>
-            }
-          </div>
-        </div>
-      </main>
-    </>
+        </main>
+      </>
   )
 }
 
