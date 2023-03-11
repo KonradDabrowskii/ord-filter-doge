@@ -37,12 +37,25 @@
   background: lighten($secondary-color, 3%)
 
 .homeButton
-  background-color: #555
-  color: #fff
-  text-transform: uppercase
-  font-size: 14px
-  font-weight: 600
-  padding: 12px 20px
-  border-radius: 5px
-  margin-left: 10px
+  background-color: $secondary-color
+  color: $on-secondary-color
+  font-size: 1.3rem
+  font-weight: bold
+  padding: 0.3rem 1rem
+  border-radius: 10rem
+  margin-left: 1rem
+  display: flex
+  align-items: center
   text-decoration: none
+  cursor: pointer
+  -webkit-tap-highlight-color: transparent
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  cursor: pointer
+
+.homeButton > p
+  margin: 0rem 0.3rem
