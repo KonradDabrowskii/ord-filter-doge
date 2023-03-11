@@ -198,7 +198,9 @@ export default function Collection({ inscriptions, properties, counts, config })
                     <p className={styles.clearAll} onClick={() => setQueryFilters(router, [])}>Clear All</p>
                 )}
               </div>
-              <a href="https://www.bitcoingoblins.com/" className={`${styles.button} ${styles.filterContainer}`} target="_blank" rel="noopener noreferrer">HOME</a>
+              <div className={`${styles.filterContainer} ${styles.button}`}>
+                <a href="https://www.dogefrenz.com/" target="_blank" rel="noopener noreferrer">HOME</a>
+              </div>
             </div>
             <div className={styles.collectionContainer}>
               {filteredInscriptions.map((inscription) => (
