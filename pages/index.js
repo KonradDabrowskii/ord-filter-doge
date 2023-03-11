@@ -3,6 +3,7 @@ import fs from 'fs'
 import path from 'path'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
+import React from "react";
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -188,22 +189,24 @@ export default function Collection({ inscriptions, properties, counts, config })
                    toggleSideBar={toggleSideBar}/>
           <div className={styles.mainContainer}>
             <div className={styles.topContainer}>
-              <Button text="Filter" icon="filter" onClick={toggleSideBar} style={{letterSpacing: "0.07rem"}}/>
-              <div className={styles.filterContainer}>
-                {filterList.map((filter) => (
-                    <FilterCard property={filter.property} trait={filter.trait} setState={setState}
-                                key={`card_${filter.property}_${filter.trait}`}/>
-                ))}
-                {filterList.length > 0 && (
-                    <p className={styles.clearAll} onClick={() => setQueryFilters(router, [])}>Clear All</p>
-                )}
+              <div style={{display: "flex", justifyContent: "flex-start", alignItems: "center"}}>
+                <Button text="Filter" icon="filter" onClick={toggleSideBar} style={{letterSpacing: "0.07rem"}}/>
               </div>
-              <a href="https://www.dogefrenz.com/" className={`${styles.button} ${styles.filterContainer} ${styles.homeButton}`} target="_blank" rel="noopener noreferrer">
-            <span className={`${styles.buttonIcon} ${styles.homeButtonIcon}`}>
-              <i className="fas fa-home"></i>
-            </span>
-                <p className={`${styles.buttonText} ${styles.homeButtonText}`}>Home</p>
-              </a>
+              <div style={{display: "flex", justifyContent: "center", alignItems: "center", flex: 1}}>
+                <Button text="Home" href="https://www.dogefrenz.com/" openTab style={{
+                  fontWeight: "normal",
+                  fontSize: "1rem"
+                }}/>
+              </div>
+            </div>
+            <div className={styles.filterContainer}>
+              {filterList.map((filter) => (
+                  <FilterCard property={filter.property} trait={filter.trait} setState={setState}
+                              key={`card_${filter.property}_${filter.trait}`}/>
+              ))}
+              {filterList.length > 0 && (
+                  <p className={styles.clearAll} onClick={() => setQueryFilters(router, [])}>Clear All</p>
+              )}
             </div>
             <div className={styles.collectionContainer}>
               {filteredInscriptions.map((inscription) => (
@@ -228,6 +231,27 @@ export default function Collection({ inscriptions, properties, counts, config })
       </>
   )
 }
+
+
+
+function MyComponent() {
+  return (
+      <div>
+        <Button
+            text="Home"
+            href="https://www.dogefrenz.com/"
+            style={{
+              margin: "0.3rem",
+              position: "absolute",
+              right: "0px",
+              width: "2.5rem"
+            }}
+        />
+      </div>
+  );
+}
+
+
 
 function FilterCard({ property, trait, setState }) {
   return (

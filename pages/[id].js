@@ -71,7 +71,7 @@ export default function Incription({ inscription, config }) {
 function HeaderInfo({ inscription }) {
   return (
     <div className={styles.headerContainer}>
-        <h1 style={{ fontSize: "2.5rem" }}>{`Shibescriptions #${inscription.inscription_number}`}</h1>
+        <h1 style={{ fontSize: "2.5rem" }}>{`Shibescription #${inscription.inscription_number}`}</h1>
       <div className={styles.idContainer}>
         <p>{`ID: ${inscription.id}`}</p>
         <IconButton icon="copy" 
