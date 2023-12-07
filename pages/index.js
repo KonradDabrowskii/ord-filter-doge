@@ -201,7 +201,7 @@ export default function Collection({ inscriptions, properties, counts, config })
                 <Button text="Filter" icon="filter" onClick={toggleSideBar} style={{letterSpacing: "0.07rem"}}/>
               </div>
               <div style={{display: "flex", justifyContent: "center", alignItems: "center", flex: 1}}>
-                <Button text="Home" href="https://www.dogefrenz.com/" openTab style={{
+                <Button text="OrdinalGenesis" href="https://ordinalgenesis.xyz" openTab style={{
                   fontWeight: "normal",
                   fontSize: "1rem"
                 }}/>
