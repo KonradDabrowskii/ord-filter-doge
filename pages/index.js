@@ -29,15 +29,20 @@ export async function getStaticProps() {
       }
       counts[attribute.trait_type][attribute.value]++
     }
-
-    inscription.inscription_number = await fetchInscriptionNumber(inscription.id)
   }
+
+  // Fetching inscription numbers in parallel
+  const fetchNumbers = async (inscription) => {
+    inscription.inscription_number = await fetchInscriptionNumber(inscription.id);
+    return inscription;
+  };
+
+  await Promise.all(inscriptions.map(fetchNumbers));
 
   let properties = {}
   let propertyNames = Object.keys(counts)
   propertyNames.sort()
-  // Manually move 1/1 to the end
-  propertyNames.push(propertyNames.splice(0, 1))
+  propertyNames.push(propertyNames.splice(propertyNames.indexOf('1/1'), 1))
   for (let property of propertyNames) {
     properties[property] = {}
     let traitNames = Object.keys(counts[property])
@@ -54,9 +59,11 @@ export async function getStaticProps() {
       properties,
       counts,
       config
-    }
+    },
+    revalidate: 86400 // revalidate every 24 hours
   }
 }
+
 
 
 function setQueryFilters(router, filterList) {
