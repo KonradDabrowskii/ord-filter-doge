@@ -53,10 +53,12 @@ export default function Incription({ inscription, config }) {
       <main className={styles.mainContainer}>
         <div className={styles.contentContainer}>
           <div className={styles.imageContainer}>
-            <Image src={`https://wonky-ord.dogeord.io/content/${inscription.id}`}
-                   fill
-                   style={{ objectFit: "contain" }}
-                   alt={`Image of #${inscription.inscription_number}`}/>
+          <img src={`https://wonky-ord.dogeord.io/content/${inscription.id}`}
+     style={{ objectFit: "contain" }}
+     alt={`Image of Shibescription #${inscription.inscription_number}`}/>
+
+
+
           </div>
           <div className={styles.infoContainer}>
             <HeaderInfo inscription={inscription}/>
@@ -71,7 +73,7 @@ export default function Incription({ inscription, config }) {
 function HeaderInfo({ inscription }) {
   return (
     <div className={styles.headerContainer}>
-        <h1 style={{ fontSize: "2.5rem" }}>{`Shibescription #${inscription.inscription_number}`}</h1>
+        <h1 style={{ fontSize: "2.5rem" }}>{`Inscription #${inscription.inscription_number}`}</h1>
       <div className={styles.idContainer}>
         <p>{`ID: ${inscription.id}`}</p>
         <IconButton icon="copy" 

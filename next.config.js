@@ -5,7 +5,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'doginals.com',
+        hostname: 'wonky-ord.dogeord.io',
         port: '',
         pathname: '/content/**',
       },
