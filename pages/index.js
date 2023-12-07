@@ -213,7 +213,7 @@ export default function Collection({ inscriptions, properties, counts, config })
                   <Link href={`/${inscription.id}`} key={inscription.meta.name}>
                     <div className={styles.imageCard}>
                       <div className={styles.imageContainer}>
-                        <Image src={`https://doginals.com/content/${inscription.id}`}
+                        <Image src={`https://wonky-ord.dogeord.io/content/${inscription.id}`}
                                fill
                                style={{objectFit: "contain"}}
                                alt={`Image of #${inscription.inscription_number}`}/>
